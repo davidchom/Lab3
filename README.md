@@ -1,1 +1,2 @@
-# Lab3
+# 3 zadanie z laboratorium
+Zadanie to miało na celu utworzenie interfejsu graficznego z dwoma przyciskami. Pierwszy - RUN ma na celu tak długie uciekanie przed kursorem myszki, dopóki nie trafi do obszaru bezpiecznego, w którym to zmieni swój kolor na czerwony. Drugi przycisk ma na celu ustawienie przycisku "RUN" w pozycji początkowej, oraz usunięcie obiektów, które powstają po wciśnięciu klawisza myszy i przycisku "k" lub "o", przedstawiają one prostokąt i owal.
