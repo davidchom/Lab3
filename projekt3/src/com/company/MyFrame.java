@@ -35,7 +35,7 @@ public class MyFrame extends MouseInputAdapter implements KeyListener {
     int yClicked;
 
 
-    public void runMyFrame() {
+    public MyFrame() {
 
         frame = new JFrame();
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -59,7 +59,7 @@ public class MyFrame extends MouseInputAdapter implements KeyListener {
 
                 mouseLocationX.setText(String.valueOf(mouseX));
                 mouseLocationY.setText(String.valueOf(mouseY));
-//                jpanel.requestFocus();
+
             }
         });
 
@@ -150,14 +150,10 @@ public class MyFrame extends MouseInputAdapter implements KeyListener {
             int c = e.getKeyCode();
 
 
-            switch (c) {
-                case VK_K:
-                    kanwa.point.pointsS.add(new Point(xClicked,yClicked));
-                    break;
-                case VK_O:
-                    kanwa.point.pointsO.add(new Point(xClicked,yClicked));
-                    break;
-            }
+        switch (c) {
+            case VK_K -> kanwa.point.pointsS.add(new Point(xClicked, yClicked));
+            case VK_O -> kanwa.point.pointsO.add(new Point(xClicked, yClicked));
+        }
         }
 
     @Override

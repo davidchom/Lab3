@@ -1,10 +1,12 @@
 package com.company;
 
+import javax.swing.*;
+
 public class Main {
 
-    static MyFrame myFrame = new MyFrame();
-
     public static void main(String[] args) {
-        myFrame.runMyFrame();
+        SwingUtilities.invokeLater(() -> {
+            MyFrame myFrame = new MyFrame();
+        });
     }
 }
